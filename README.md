@@ -1,16 +1,15 @@
-# OpenGuandan
+# OpenGuanDan
 
-这是 OpenGuandan 项目的演示网站。
+A Large-Scale Imperfect Information Game Benchmark for GuanDan (掼蛋).
 
-## 项目简介
+## About
 
-OpenGuandan 项目简介占位符。
+OpenGuanDan is a novel benchmark that enables both efficient simulation of GuanDan (a popular four-player, multi-round Chinese card game) and comprehensive evaluation of both learning-based and rule-based GuanDan AI agents.
 
-## 使用说明
+## Website
 
-1. 克隆此仓库
-2. 在浏览器中打开 `index.html`
+This repository contains the project website. Simply open `index.html` in your browser to view it.
 
-## 许可证
+## License
 
-本项目基于 [Nerfies 网站模板](https://github.com/nerfies/nerfies.github.io) 修改。
+This website template is borrowed from [Nerfies](https://github.com/nerfies/nerfies.github.io).
