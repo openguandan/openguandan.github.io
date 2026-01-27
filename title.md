@@ -1,0 +1,8 @@
+## title
+
+OpenGuanDan: A Large-Scale Imperfect Information Game Benchmark
+
+## abstract
+
+The advancement of data-driven artificial intelligence(AI), particularly machine learning, heavily depends on large-scale benchmarks. Despite remarkable progress across domains ranging from pattern recognition to intelligent decision-making in recent decades, exemplified by breakthroughs in board games, card games, and electronic sports games,  there remains a pressing need for more challenging benchmarks to drive further research. To this end, this paper proposes OpenGuanDan, a novel benchmark that enables both efficient simulation of GuanDan(a popular four-player, multi-round Chinese card game) and comprehensive evaluation of both learning-based and rule-based GuanDan AI agents. OpenGuanDan poses a suite of nontrivial challenges, including imperfect in formation, large-scale information set and action spaces, a mixed learning objective involving cooperation and competition, long-horizon decision making, variable action spaces, and dynamic team composition. These characteristics make it a demanding testbed for existing intelligent decision making methods. Moreover, the independent API for each player allows human-AI interactions and supports integration with large language models. Empirically, we conduct two types of evaluations: (1)pairwise competitions among all GuanDan AI agents,and (2)human-AI matchups. Experimental results demonstrate that while current learning based agents substantially outperform rule-based counterparts, they still fall short of achieving superhuman performance, underscoring the need for continued research and development in multi-agent intelligent decision-making domain.
+

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="OpenGuanDan: A Large-Scale Imperfect Information Game Benchmark">
+  <meta name="keywords" content="OpenGuanDan, GuanDan, Card Game, AI Benchmark, Imperfect Information">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenGuanDan: A Large-Scale Imperfect Information Game Benchmark</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">OpenGuanDan: A Large-Scale Imperfect Information Game Benchmark</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Anonymous Authors</a>
+            </span>
+          </div>
+<!-- 
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">A novel benchmark for efficient simulation and comprehensive evaluation of GuanDan AI agents</span>
+          </div> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- GitHub Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/openguandan/GuanDanServer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="./static/Guandan Platform Documentation.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Document</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://zh.wikipedia.org/wiki/%E6%8E%BC%E8%9B%8B"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-external-link-alt"></i>
+                  </span>
+                  <span>Wikipedia</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/OpenGuanDan_simulation.png" alt="OpenGuanDan Simulation" style="width: 60%; border-radius: 10px;">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">OpenGuanDan</span> enables efficient simulation and comprehensive evaluation of both learning-based and rule-based GuanDan AI agents
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="./static/images/OpenGuanDan_simulation.png" alt="OpenGuanDan Simulation" style="width: 100%; height: auto;">
+        </div>
+        <div class="item">
+          <img src="./static/images/Game_complexity_analysis.png" alt="Game Complexity Analysis" style="width: 100%; height: auto;">
+        </div>
+        <div class="item">
+          <img src="./static/images/pair-wise evaluation.png" alt="Pair-wise Evaluation" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The advancement of data-driven artificial intelligence (AI), particularly machine learning, heavily depends on large-scale benchmarks. Despite remarkable progress across domains ranging from pattern recognition to intelligent decision-making in recent decades, exemplified by breakthroughs in board games, card games, and electronic sports games, there remains a pressing need for more challenging benchmarks to drive further research.
+            To this end, this paper proposes OpenGuanDan, <b>a novel benchmark that enables both efficient simulation of GuanDan (a popular four-player, multi-round Chinese card game) and comprehensive evaluation of both learning-based and rule-based GuanDan AI agents</b>. OpenGuanDan poses a suite of nontrivial challenges, including imperfect information, large-scale information set and action spaces, a mixed learning objective involving cooperation and competition, long-horizon decision making, variable action spaces, and dynamic team composition. These characteristics make it a demanding testbed for existing intelligent decision making methods.
+            Moreover, the independent API for each player allows human-AI interactions and supports integration with large language models. Empirically, we conduct two types of evaluations: (1) pairwise competitions among all GuanDan AI agents,and (2) human-AI matchups. Experimental results demonstrate that while current learning based agents substantially outperform rule-based counterparts, they still fall short of achieving superhuman performance, underscoring the need for continued research and development in multi-agent intelligent decision-making domain.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+
+<section class="section" style="padding: 1rem 2rem; margin: 0 auto; max-width: 100%;">
+  <div class="container is-fluid" style="padding: 0;">
+    <div class="columns is-centered has-text-centered" style="margin-bottom: 1rem;">
+      <div class="column is-full">
+        <h2 class="title is-3">Quick Preview</h2>
+      </div>
+    </div>
+    <div class="columns is-variable is-1-mobile is-2-desktop" style="margin: 0; width: 100%;">
+      <div class="column is-4" style="padding: 0.5rem;">
+        <div class="content has-text-centered" style="margin-bottom: 0; width: 100%;">
+          <h3 class="title is-5" style="margin-bottom: 0.5rem; font-size: 1.4rem;">Human vs Danzero</h3>
+          <video autoplay loop muted playsinline style="width: 100%; height: auto; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <source src="./static/videos/Danzero.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column is-4" style="padding: 0.5rem;">
+        <div class="content has-text-centered" style="margin-bottom: 0; width: 100%;">
+          <h3 class="title is-5" style="margin-bottom: 0.5rem; font-size: 1.4rem;">Human vs SDMC</h3>
+          <video autoplay loop muted playsinline style="width: 100%; height: auto; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <source src="./static/videos/SDMC.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column is-4" style="padding: 0.5rem;">
+        <div class="content has-text-centered" style="margin-bottom: 0; width: 100%;">
+          <h3 class="title is-5" style="margin-bottom: 0.5rem; font-size: 1.4rem;">Human vs GS2</h3>
+          <video autoplay loop muted playsinline style="width: 100%; height: auto; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <source src="./static/videos/GS2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- simulation efficiency  -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-half">
+        <h2 class="title is-3">Simulation Efficiency</h2>
+        <img src="./static/images/OpenGuanDan_simulation.png" alt="OpenGuanDan Simulation"
+          style="width: 100%; border-radius: 10px;">
+        <div class="content has-text-justified" style="margin-top: 1.5rem;">
+          <p>
+            The self-developed GuanDan simulator is implemented in highly optimized Java code, enabling highly efficient simulation on standard CPU-based machines. This allows a throughput of approximately 25 million steps per hour across 10 parallel environments on a 24-core Intel Core i9-13900K CPU (3.00GHz).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-widescreen"> <div class="columns is-centered has-text-centered">
+      <div class="column is-full"> <h2 class="title is-3">Pair-wise Evaluation</h2>
+        <img src="./static/images/pair-wise evaluation.png" alt="Pair-wise Evaluation"
+          style="width: 100%; border-radius: 10px;">
+        <div class="content has-text-justified" style="margin-top: 1.5rem;">
+          <p>
+            Learning-based agents consistently outperform rule-based agents. What's more, GS2 uses SDMC as a blueprint and further refines it using real-time subgam solving, thus leading to better performance. In addition, although both SDMC and DanZero are developed using the DMC method and the self-play training paradigm, SDMC introduces soft action sampling during action selection, and accordingly demonstrates better performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- human AI evluation -->
+
+<section class="section">
+  <div class="container is-max-widescreen"> <div class="columns is-centered has-text-centered">
+      <div class="column is-full"> <h2 class="title is-3">Human-AI Evaluation</h2>
+        <img src="./static/images/human-AI_evluation.png" alt="Human-AI Evaluation"
+          style="width: 100%; border-radius: 10px;">
+        <div class="content has-text-justified" style="margin-top: 1.5rem;">
+          <p>
+            Current learning-based agents still fail to achieve superhuman performance, which underscores the need for continued research.
+          </p>
+        </div>  
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="#" class="external-link" style="display: inline-block;">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
