@@ -188,14 +188,19 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-half">
+    <!-- 整体容器：先放图片区域，再放文字区域 -->
+    <div class="columns is-centered has-text-centered is-multiline">
+      <!-- 图片区域：占8列（相对窄），居中显示 -->
+      <div class="column is-6">
         <h2 class="title is-3">Simulation Efficiency</h2>
         <img src="./static/images/OpenGuanDan_simulation.png" alt="OpenGuanDan Simulation"
           style="width: 100%; border-radius: 10px;">
+      </div>
+      <!-- 文字区域：占10列（更宽），取消居中，恢复左对齐 -->
+      <div class="column is-10 has-text-left">
         <div class="content has-text-justified" style="margin-top: 1.5rem;">
           <p>
-            The self-developed GuanDan simulator is implemented in highly optimized Java code, enabling highly efficient simulation on standard CPU-based machines. This allows a throughput of approximately 25 million steps per hour across 10 parallel environments on a 24-core Intel Core i9-13900K CPU (3.00GHz).
+            Our self-developed GuanDan simulator is implemented in highly optimized Java code, enabling highly efficient simulation on standard CPU-based machines. This allows a throughput of approximately 25 million steps per hour across 10 parallel environments on a 24-core Intel Core i9-13900K CPU (3.00GHz).
           </p>
         </div>
       </div>
